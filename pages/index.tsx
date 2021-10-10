@@ -15,9 +15,13 @@ const Home: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <ItemsMainSection
-                mian={<ItemsCard />}
-                top={<ItemsCard />}
-                bottom={<ItemsCard />}
+                mian={
+                    <ItemsCard name="Krzemień wieczny" price={70} />
+                }
+                top={<ItemsCard name="Krzemień wieczny" price={70} />}
+                bottom={
+                    <ItemsCard name="Krzemień wieczny" price={70} />
+                }
             />
         </div>
     )

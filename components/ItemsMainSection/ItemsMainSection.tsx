@@ -8,14 +8,14 @@ interface LayoutProps {
 
 const ItemsMainSection = ({ mian, top, bottom }: LayoutProps) => {
     return (
-        <div className="grid-col-3 grid h-screen w-full grid-flow-col grid-rows-4 gap-2 place-self-center">
-            <div className="col-span-2 row-span-4 border border-secondary bg-primary">
+        <div className="min-h-[200vh] lg:grid-col-3 grid w-full gap-2 place-self-center lg:min-h-screen lg:grid-flow-col lg:grid-rows-4">
+            <div className="border border-secondary bg-primary lg:col-span-2 lg:row-span-4">
                 {mian}
             </div>
-            <div className="row-span-2 border border-secondary bg-primary">
+            <div className="border border-secondary bg-primary lg:row-span-2">
                 {top}
             </div>
-            <div className="row-span-2 border border-secondary bg-primary">
+            <div className="border border-secondary bg-primary lg:row-span-2">
                 {bottom}
             </div>
         </div>
