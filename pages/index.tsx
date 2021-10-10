@@ -4,6 +4,7 @@ import CategoryItemCard from '../components/CategoryItemCard/CategoryItemCard'
 import CategorySlider from '../components/CategorySlider/CategorySlider'
 import ItemsCard from '../components/ItemsCard/ItemsCard'
 import ItemsMainSection from '../components/ItemsMainSection/ItemsMainSection'
+import TextSection from '../components/TextSection/TextSection'
 
 const Home: NextPage = () => {
     return (
@@ -50,6 +51,9 @@ const Home: NextPage = () => {
                         <CategoryItemCard />
                         <CategoryItemCard />
                     </CategorySlider>
+                </section>
+                <section>
+                    <TextSection />
                 </section>
             </main>
         </div>
