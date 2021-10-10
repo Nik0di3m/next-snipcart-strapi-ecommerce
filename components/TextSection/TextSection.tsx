@@ -1,6 +1,6 @@
 const TextSection = () => {
     return (
-        <div className="w-full items-center px-2">
+        <div className="w-full items-center px-2 py-8">
             <div className="flex flex-col items-center justify-center py-8 lg:flex-row lg:space-x-40">
                 <div>
                     <h1 className="text-left text-5xl leading-relaxed lg:text-right">
