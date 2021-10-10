@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import BestSellersSection from '../components/BestSellersSection/BestSellersSection'
 import CategoryItemCard from '../components/CategoryItemCard/CategoryItemCard'
 import CategorySlider from '../components/CategorySlider/CategorySlider'
 import ItemsCard from '../components/ItemsCard/ItemsCard'
@@ -77,6 +78,16 @@ const Home: NextPage = () => {
                             />
                         }
                     />
+                </section>
+                <section>
+                    <BestSellersSection>
+                        <CategoryItemCard />
+                        <CategoryItemCard />
+                        <CategoryItemCard />
+                        <CategoryItemCard />
+                        <CategoryItemCard />
+                        <CategoryItemCard />
+                    </BestSellersSection>
                 </section>
             </main>
         </div>
