@@ -1,11 +1,13 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import CategoryItemCard from '../components/CategoryItemCard/CategoryItemCard'
+import CategorySlider from '../components/CategorySlider/CategorySlider'
 import ItemsCard from '../components/ItemsCard/ItemsCard'
 import ItemsMainSection from '../components/ItemsMainSection/ItemsMainSection'
 
 const Home: NextPage = () => {
     return (
-        <div className="text-primaryText min-h-screen min-w-full bg-black px-2 py-6">
+        <div className="text-primaryText min-h-screen min-w-full py-2">
             <Head>
                 <title>Shop</title>
                 <meta
@@ -14,15 +16,42 @@ const Home: NextPage = () => {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <ItemsMainSection
-                mian={
-                    <ItemsCard name="Krzemień wieczny" price={70} />
-                }
-                top={<ItemsCard name="Krzemień wieczny" price={70} />}
-                bottom={
-                    <ItemsCard name="Krzemień wieczny" price={70} />
-                }
-            />
+            <main>
+                <section className="px-2">
+                    <ItemsMainSection
+                        mian={
+                            <ItemsCard
+                                name="Krzemień wieczny"
+                                price={70}
+                            />
+                        }
+                        top={
+                            <ItemsCard
+                                name="Krzemień wieczny"
+                                price={70}
+                            />
+                        }
+                        bottom={
+                            <ItemsCard
+                                name="Krzemień wieczny"
+                                price={70}
+                            />
+                        }
+                    />
+                </section>
+                <section>
+                    <CategorySlider>
+                        <CategoryItemCard />
+                        <CategoryItemCard />
+                        <CategoryItemCard />
+                        <CategoryItemCard />
+                        <CategoryItemCard />
+                        <CategoryItemCard />
+                        <CategoryItemCard />
+                        <CategoryItemCard />
+                    </CategorySlider>
+                </section>
+            </main>
         </div>
     )
 }

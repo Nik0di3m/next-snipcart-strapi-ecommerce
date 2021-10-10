@@ -4,22 +4,20 @@ module.exports = {
         './pages/**/*.{js,ts,jsx,tsx}',
         './components/**/*.{js,ts,jsx,tsx}',
     ],
-    darkMode: false, // or 'media' or 'class'
+    darkMode: 'media', // or 'media' or 'class'
     theme: {
         extend: {
             colors: {
-                primaryText:
-                    '#F5F5F5',
-                primary:
-                    '#111111',
-                secondary:
-                    '#464545',
+                primaryText: '#F5F5F5',
+                primary: '#111111',
+                secondary: '#464545',
                 accent: '#6A706E',
             },
         },
     },
     variants: {
+        scrollbar: ['dark'],
         extend: {},
     },
-    plugins: [],
+    plugins: [require('tailwind-scrollbar')],
 }
