@@ -6,7 +6,13 @@ module.exports = {
     ],
     darkMode: false, // or 'media' or 'class'
     theme: {
-        extend: {},
+        extend: {
+            colors: {
+                primary: '#111111',
+                secondary: '#464545',
+                accent: '#6A706E',
+            },
+        },
     },
     variants: {
         extend: {},
