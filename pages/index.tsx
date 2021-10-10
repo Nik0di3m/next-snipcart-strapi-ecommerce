@@ -4,6 +4,7 @@ import CategoryItemCard from '../components/CategoryItemCard/CategoryItemCard'
 import CategorySlider from '../components/CategorySlider/CategorySlider'
 import ItemsCard from '../components/ItemsCard/ItemsCard'
 import ItemsMainSection from '../components/ItemsMainSection/ItemsMainSection'
+import ItemsSecoundSection from '../components/ItemsSecoundSection/ItemsSecoundSection'
 import TextSection from '../components/TextSection/TextSection'
 
 const Home: NextPage = () => {
@@ -20,7 +21,7 @@ const Home: NextPage = () => {
             <main>
                 <section className="px-2">
                     <ItemsMainSection
-                        mian={
+                        main={
                             <ItemsCard
                                 name="Krzemień wieczny"
                                 price={70}
@@ -54,6 +55,28 @@ const Home: NextPage = () => {
                 </section>
                 <section>
                     <TextSection />
+                </section>
+                <section className="px-2">
+                    <ItemsSecoundSection
+                        main={
+                            <ItemsCard
+                                name="Krzemień wieczny"
+                                price={70}
+                            />
+                        }
+                        top={
+                            <ItemsCard
+                                name="Krzemień wieczny"
+                                price={70}
+                            />
+                        }
+                        bottom={
+                            <ItemsCard
+                                name="Krzemień wieczny"
+                                price={70}
+                            />
+                        }
+                    />
                 </section>
             </main>
         </div>

@@ -13,7 +13,7 @@ const CategoryItemCard = () => {
                 />
             </div>
             <div className="bg-black px-10 py-3">
-                <h1 className="text-2xl">Zapałki</h1>
+                <h1 className="text-2xl">Krzemienie</h1>
             </div>
         </div>
     )
