@@ -16,7 +16,7 @@ const filterData = [
 
 const ItemsListView: NextPage = () => {
     return (
-        <div className="text-primaryText min-h-screen min-w-full py-2">
+        <div className="min-h-screen min-w-full py-2 text-primaryText">
             <Head>
                 <title>Shop</title>
                 <meta
@@ -25,8 +25,8 @@ const ItemsListView: NextPage = () => {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className="flex w-full justify-between p-2">
-                <div className="w-1/6 space-y-20">
+            <main className="flex w-full flex-col justify-between p-2 lg:flex-row">
+                <div className="p-2 lg:w-1/6 lg:space-y-20 lg:p-0">
                     <FilterList
                         title="All categories"
                         options={filterData}
@@ -36,7 +36,23 @@ const ItemsListView: NextPage = () => {
                         options={filterData}
                     />
                 </div>
-                <div className="grid w-full grid-cols-3 place-items-center gap-8 px-2">
+                <div className="space-y-20 p-2 lg:hidden">
+                    <FilterList
+                        title="Sort by"
+                        options={filterData}
+                    />
+                </div>
+                <div className="grid w-full grid-cols-1 place-items-center gap-8 px-2 lg:grid-cols-3">
+                    <ItemViewCard />
+                    <ItemViewCard />
+                    <ItemViewCard />
+                    <ItemViewCard />
+                    <ItemViewCard />
+                    <ItemViewCard />
+                    <ItemViewCard />
+                    <ItemViewCard />
+                    <ItemViewCard />
+                    <ItemViewCard />
                     <ItemViewCard />
                     <ItemViewCard />
                     <ItemViewCard />
@@ -44,7 +60,7 @@ const ItemsListView: NextPage = () => {
                     <ItemViewCard />
                     <ItemViewCard />
                 </div>
-                <div className="w-1/6 space-y-20">
+                <div className="hidden w-1/6 space-y-20 lg:block">
                     <FilterList
                         title="Sort by"
                         options={filterData}
