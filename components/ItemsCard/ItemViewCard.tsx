@@ -45,7 +45,7 @@ const ItemViewCard = () => {
             onTouchStartCapture={() => setActive(!active)}
             className="flex h-auto w-full flex-col items-start"
         >
-            <div className="relative h-96 w-full border border-secondary bg-primary">
+            <div className="relative h-96 w-full overflow-x-hidden border border-secondary bg-primary">
                 <div className="w-[90%] h-[90%] relative hover:scale-110 duration-300">
                     <Link href="/product/123">
                         <a>

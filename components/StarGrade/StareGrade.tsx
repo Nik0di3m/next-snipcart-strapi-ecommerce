@@ -3,13 +3,12 @@ import { StarIcon } from '@heroicons/react/solid'
 const StareGrade = () => {
     const starRender = (number: number) => {
         const widthDiv = (number / 5) * 100
-        console.log(widthDiv)
         const fullWidth = 100 - widthDiv
         return fullWidth
     }
 
     return (
-        <div className="w-18 relative bg-black">
+        <div className="relative w-20 bg-black">
             <div className="flex">
                 <StarIcon className="h-4" />
                 <StarIcon className="h-4" />
