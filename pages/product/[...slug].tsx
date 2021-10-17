@@ -143,7 +143,7 @@ const ProductPage: NextPage = () => {
                         <button
                             data-item-id="1"
                             data-item-price="80.00"
-                            data-item-url="/"
+                            data-item-url="/api/products/1"
                             data-item-name="Zapalniczka"
                             data-item-image="/images/test.png"
                             data-item-file-guid="39c97d6d-3a02-4f67-bf6d-7904d7438292"

@@ -8,7 +8,24 @@ import {
 } from '@heroicons/react/solid'
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion, useAnimation } from 'framer-motion'
-const ItemViewCard = () => {
+
+interface CoolItemProps {
+    id: number
+    name: string
+    price: number
+    image: string
+    description: string
+    url: string
+}
+
+const ItemViewCard = ({
+    id,
+    name,
+    price,
+    image,
+    description,
+    url,
+}: CoolItemProps) => {
     const activeAnimation = useAnimation()
 
     const [onWishList, setOnWishList] = useState<boolean>(false)
@@ -50,7 +67,7 @@ const ItemViewCard = () => {
                     <Link href="/product/123">
                         <a>
                             <Image
-                                src="/images/test.png"
+                                src={`${image}`}
                                 alt=""
                                 layout="fill"
                                 objectFit="contain"
@@ -104,11 +121,11 @@ const ItemViewCard = () => {
                 <Link href="/product/123">
                     <a>
                         <h1 className="text-xl hover:text-accent duration-150 ease-in">
-                            Krzemień wieczny
+                            {name}
                         </h1>
                     </a>
                 </Link>
-                <h2 className="text-xl">70.00zł</h2>
+                <h2 className="text-xl">{price.toString()}zł</h2>
             </div>
             <div>
                 <StareGrade />

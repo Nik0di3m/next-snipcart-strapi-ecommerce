@@ -10,7 +10,7 @@ import TextSection from '../components/TextSection/TextSection'
 
 const Home: NextPage = () => {
     return (
-        <div className="text-primaryText min-h-screen min-w-full py-2">
+        <div className="min-h-screen min-w-full py-2 text-primaryText">
             <Head>
                 <title>Shop</title>
                 <meta
@@ -95,3 +95,95 @@ const Home: NextPage = () => {
 }
 
 export default Home
+export const products = [
+    {
+        id: '1',
+        name: 'Krzemień wieczny',
+        price: 80.0,
+        image: '/images/test.png',
+        description:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quas rerum a porro ratione repellendus iste, vero corrupti, quibusdam magni consequuntur nostrum quam consectetur cupiditate atque ducimus unde, numquam tempora.',
+        url: '/api/products/1',
+    },
+    {
+        id: '2',
+        name: 'Krzemień wieczny',
+        price: 80.0,
+        image: '/images/test.png',
+        description:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quas rerum a porro ratione repellendus iste, vero corrupti, quibusdam magni consequuntur nostrum quam consectetur cupiditate atque ducimus unde, numquam tempora.',
+        url: '/api/products/2',
+    },
+    {
+        id: '3',
+        name: 'Krzemień wieczny',
+        price: 80.0,
+        image: '/images/test.png',
+        description:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quas rerum a porro ratione repellendus iste, vero corrupti, quibusdam magni consequuntur nostrum quam consectetur cupiditate atque ducimus unde, numquam tempora.',
+        url: '/api/products/3',
+    },
+    {
+        id: '4',
+        name: 'Krzemień wieczny',
+        price: 80.0,
+        image: '/images/test.png',
+        description:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quas rerum a porro ratione repellendus iste, vero corrupti, quibusdam magni consequuntur nostrum quam consectetur cupiditate atque ducimus unde, numquam tempora.',
+        url: '/api/products/4',
+    },
+    {
+        id: '5',
+        name: 'Krzemień wieczny',
+        price: 80.0,
+        image: '/images/test.png',
+        description:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quas rerum a porro ratione repellendus iste, vero corrupti, quibusdam magni consequuntur nostrum quam consectetur cupiditate atque ducimus unde, numquam tempora.',
+        url: '/api/products/5',
+    },
+    {
+        id: '6',
+        name: 'Krzemień wieczny',
+        price: 80.0,
+        image: '/images/test.png',
+        description:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quas rerum a porro ratione repellendus iste, vero corrupti, quibusdam magni consequuntur nostrum quam consectetur cupiditate atque ducimus unde, numquam tempora.',
+        url: '/api/products/6',
+    },
+    {
+        id: '7',
+        name: 'Krzemień wieczny',
+        price: 80.0,
+        image: '/images/test.png',
+        description:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quas rerum a porro ratione repellendus iste, vero corrupti, quibusdam magni consequuntur nostrum quam consectetur cupiditate atque ducimus unde, numquam tempora.',
+        url: '/api/products/7',
+    },
+    {
+        id: '8',
+        name: 'Krzemień wieczny',
+        price: 80.0,
+        image: '/images/test.png',
+        description:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quas rerum a porro ratione repellendus iste, vero corrupti, quibusdam magni consequuntur nostrum quam consectetur cupiditate atque ducimus unde, numquam tempora.',
+        url: '/api/products/8',
+    },
+    {
+        id: '9',
+        name: 'Krzemień wieczny',
+        price: 80.0,
+        image: '/images/test.png',
+        description:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quas rerum a porro ratione repellendus iste, vero corrupti, quibusdam magni consequuntur nostrum quam consectetur cupiditate atque ducimus unde, numquam tempora.',
+        url: '/api/products/9',
+    },
+    {
+        id: '10',
+        name: 'Krzemień wieczny',
+        price: 80.0,
+        image: '/images/test.png',
+        description:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quas rerum a porro ratione repellendus iste, vero corrupti, quibusdam magni consequuntur nostrum quam consectetur cupiditate atque ducimus unde, numquam tempora.',
+        url: '/api/products/10',
+    },
+]

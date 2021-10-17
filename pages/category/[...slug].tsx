@@ -43,22 +43,17 @@ const ItemsListView: NextPage = () => {
                     />
                 </div>
                 <div className="grid w-full grid-cols-1 place-items-center gap-8 px-2 lg:grid-cols-3">
-                    <ItemViewCard />
-                    <ItemViewCard />
-                    <ItemViewCard />
-                    <ItemViewCard />
-                    <ItemViewCard />
-                    <ItemViewCard />
-                    <ItemViewCard />
-                    <ItemViewCard />
-                    <ItemViewCard />
-                    <ItemViewCard />
-                    <ItemViewCard />
-                    <ItemViewCard />
-                    <ItemViewCard />
-                    <ItemViewCard />
-                    <ItemViewCard />
-                    <ItemViewCard />
+                    {products.map((item) => (
+                        <ItemViewCard
+                            key={item.id}
+                            name={item.name}
+                            id={item.id}
+                            image={item.image}
+                            url={item.url}
+                            description={item.description}
+                            price={item.price}
+                        />
+                    ))}
                 </div>
                 <div className="hidden w-1/6 space-y-20 lg:block">
                     <FilterList
@@ -72,3 +67,96 @@ const ItemsListView: NextPage = () => {
 }
 
 export default ItemsListView
+
+export const products = [
+    {
+        id: 1,
+        name: 'Krzemień wieczny',
+        price: 80.0,
+        image: '/images/test.png',
+        description:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quas rerum a porro ratione repellendus iste, vero corrupti, quibusdam magni consequuntur nostrum quam consectetur cupiditate atque ducimus unde, numquam tempora.',
+        url: '/api/products/1',
+    },
+    {
+        id: 2,
+        name: 'Krzemień wieczny',
+        price: 80.0,
+        image: '/images/test.png',
+        description:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quas rerum a porro ratione repellendus iste, vero corrupti, quibusdam magni consequuntur nostrum quam consectetur cupiditate atque ducimus unde, numquam tempora.',
+        url: '/api/products/1',
+    },
+    {
+        id: 3,
+        name: 'Krzemień wieczny',
+        price: 80.0,
+        image: '/images/test.png',
+        description:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quas rerum a porro ratione repellendus iste, vero corrupti, quibusdam magni consequuntur nostrum quam consectetur cupiditate atque ducimus unde, numquam tempora.',
+        url: '/api/products/1',
+    },
+    {
+        id: 4,
+        name: 'Krzemień wieczny',
+        price: 80.0,
+        image: '/images/test.png',
+        description:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quas rerum a porro ratione repellendus iste, vero corrupti, quibusdam magni consequuntur nostrum quam consectetur cupiditate atque ducimus unde, numquam tempora.',
+        url: '/api/products/1',
+    },
+    {
+        id: 5,
+        name: 'Krzemień wieczny',
+        price: 80.0,
+        image: '/images/test.png',
+        description:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quas rerum a porro ratione repellendus iste, vero corrupti, quibusdam magni consequuntur nostrum quam consectetur cupiditate atque ducimus unde, numquam tempora.',
+        url: '/api/products/1',
+    },
+    {
+        id: 6,
+        name: 'Krzemień wieczny',
+        price: 80.0,
+        image: '/images/test.png',
+        description:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quas rerum a porro ratione repellendus iste, vero corrupti, quibusdam magni consequuntur nostrum quam consectetur cupiditate atque ducimus unde, numquam tempora.',
+        url: '/api/products/1',
+    },
+    {
+        id: 7,
+        name: 'Krzemień wieczny',
+        price: 80.0,
+        image: '/images/test.png',
+        description:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quas rerum a porro ratione repellendus iste, vero corrupti, quibusdam magni consequuntur nostrum quam consectetur cupiditate atque ducimus unde, numquam tempora.',
+        url: '/api/products/1',
+    },
+    {
+        id: 8,
+        name: 'Krzemień wieczny',
+        price: 80.0,
+        image: '/images/test.png',
+        description:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quas rerum a porro ratione repellendus iste, vero corrupti, quibusdam magni consequuntur nostrum quam consectetur cupiditate atque ducimus unde, numquam tempora.',
+        url: '/api/products/1',
+    },
+    {
+        id: 9,
+        name: 'Krzemień wieczny',
+        price: 80.0,
+        image: '/images/test.png',
+        description:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quas rerum a porro ratione repellendus iste, vero corrupti, quibusdam magni consequuntur nostrum quam consectetur cupiditate atque ducimus unde, numquam tempora.',
+        url: '/api/products/1',
+    },
+    {
+        id: 10,
+        name: 'Krzemień wieczny',
+        price: 80.0,
+        image: '/images/test.png',
+        description:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quas rerum a porro ratione repellendus iste, vero corrupti, quibusdam magni consequuntur nostrum quam consectetur cupiditate atque ducimus unde, numquam tempora.',
+        url: '/api/products/1',
+    },
+]
