@@ -1,6 +1,6 @@
 import { ChevronRightIcon } from '@heroicons/react/solid'
 import { motion, useAnimation } from 'framer-motion'
-import { GetServerSideProps, GetStaticProps, NextPage } from 'next'
+import { NextPage } from 'next'
 import Image from 'next/image'
 import { useState } from 'react'
 import StareGrade from '../../components/StarGrade/StareGrade'
@@ -146,7 +146,7 @@ const ProductPage: NextPage = () => {
                             data-item-url="/api/products/1"
                             data-item-name="Kurs makeup"
                             data-item-image="/images/kurs_makeup.jpg"
-                            data-item-file-guid="c19cfb13-c71e-4c81-baa0-f63eff3a83e6"
+                            data-item-file-guid="d849a4b8-86db-4e87-af05-51e31ab7a040"
                             className="snipcart-add-item hover:scale-105 bg-white py-4 text-black duration-200 lg:w-1/3"
                         >
                             <span className="uppercase">Buy Now</span>
