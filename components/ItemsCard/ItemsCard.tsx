@@ -10,19 +10,20 @@ import { useState } from 'react'
 interface ItemCardProps {
     name: string
     price: number
+    image: string
 }
 
-const ItemsCard = ({ name, price }: ItemCardProps) => {
+const ItemsCard = ({ name, price, image }: ItemCardProps) => {
     const [onWishList, setOnWishList] = useState<boolean>(false)
     const [onCart, setOnCart] = useState<boolean>(false)
 
     return (
         <div className="relative flex h-full w-full items-center justify-center bg-transparent">
             <div className="relative h-5/6 w-5/6 hover:scale-110 cursor-pointer duration-500 ease-in-out">
-                <Link href="#">
+                <Link href="/product/1">
                     <a>
                         <Image
-                            src="/images/test.png"
+                            src={`/${image}`}
                             alt=""
                             layout="fill"
                             objectFit="contain"
@@ -32,7 +33,7 @@ const ItemsCard = ({ name, price }: ItemCardProps) => {
             </div>
             <div className="absolute left-0 top-0">
                 <div className="lg:h-[75px] flex h-12 items-center justify-start bg-black px-10 text-2xl font-bold">
-                    <Link href="#">
+                    <Link href="/product/1">
                         <a>
                             <h1 className="hover:scale-110 duration-300">
                                 {name}

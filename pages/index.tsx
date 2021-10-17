@@ -24,20 +24,23 @@ const Home: NextPage = () => {
                     <ItemsMainSection
                         main={
                             <ItemsCard
-                                name="Krzemień wieczny"
+                                name="Kurs makeup"
                                 price={70}
+                                image="images/kurs_makeup.jpg"
                             />
                         }
                         top={
                             <ItemsCard
                                 name="Krzemień wieczny"
                                 price={70}
+                                image="images/test.png"
                             />
                         }
                         bottom={
                             <ItemsCard
                                 name="Krzemień wieczny"
                                 price={70}
+                                image="images/test.png"
                             />
                         }
                     />
@@ -63,18 +66,21 @@ const Home: NextPage = () => {
                             <ItemsCard
                                 name="Krzemień wieczny"
                                 price={70}
+                                image="images/test.png"
                             />
                         }
                         top={
                             <ItemsCard
                                 name="Krzemień wieczny"
                                 price={70}
+                                image="images/test.png"
                             />
                         }
                         bottom={
                             <ItemsCard
                                 name="Krzemień wieczny"
                                 price={70}
+                                image="images/test.png"
                             />
                         }
                     />
