@@ -1,6 +1,6 @@
 import { ChevronRightIcon } from '@heroicons/react/solid'
 import { motion, useAnimation } from 'framer-motion'
-import { NextPage } from 'next'
+import { GetServerSideProps, GetStaticProps, NextPage } from 'next'
 import Image from 'next/image'
 import { useState } from 'react'
 import StareGrade from '../../components/StarGrade/StareGrade'
@@ -35,7 +35,7 @@ const ProductPage: NextPage = () => {
                     <div className="h-[300px] lg:h-[600px] flex w-full items-center justify-center bg-primary">
                         <div className="relative h-4/5 w-4/5">
                             <Image
-                                src="/images/test.png"
+                                src="/images/kurs_makeup.jpg"
                                 alt=""
                                 layout="fill"
                                 objectFit="contain"
@@ -108,7 +108,7 @@ const ProductPage: NextPage = () => {
                 <div className="lg:w-[30%] p-6">
                     <article>
                         <h1 className="mb-2 text-3xl font-normal">
-                            Krzemień Wieczny
+                            Kurs makeup
                         </h1>
                         <StareGrade />
                         <p className="mb-6 mt-6 font-light tracking-wide">
@@ -144,9 +144,9 @@ const ProductPage: NextPage = () => {
                             data-item-id="1"
                             data-item-price="80.00"
                             data-item-url="/api/products/1"
-                            data-item-name="Zapalniczka"
-                            data-item-image="/images/test.png"
-                            data-item-file-guid="39c97d6d-3a02-4f67-bf6d-7904d7438292"
+                            data-item-name="Kurs makeup"
+                            data-item-image="/images/kurs_makeup.jpg"
+                            data-item-file-guid="c19cfb13-c71e-4c81-baa0-f63eff3a83e6"
                             className="snipcart-add-item hover:scale-105 bg-white py-4 text-black duration-200 lg:w-1/3"
                         >
                             <span className="uppercase">Buy Now</span>

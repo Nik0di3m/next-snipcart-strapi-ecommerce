@@ -63,7 +63,7 @@ const ItemViewCard = ({
             className="flex h-auto w-full flex-col items-start"
         >
             <div className="relative h-96 w-full overflow-x-hidden border border-secondary bg-primary">
-                <div className="w-[90%] h-[90%] relative hover:scale-110 duration-300">
+                <div className="w-[90%] h-[90%] relative mx-auto hover:scale-110 duration-300">
                     <Link href="/product/123">
                         <a>
                             <Image

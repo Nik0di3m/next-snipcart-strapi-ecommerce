@@ -98,13 +98,13 @@ export default Home
 export const products = [
     {
         id: '1',
-        name: 'Krzemień wieczny',
+        name: 'Kurs makeup',
         price: 80.0,
-        image: '/images/test.png',
+        image: '/images/kurs_makeup.jpg',
         description:
             'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quas rerum a porro ratione repellendus iste, vero corrupti, quibusdam magni consequuntur nostrum quam consectetur cupiditate atque ducimus unde, numquam tempora.',
         url: '/api/products/1',
-        fileGuid: '39c97d6d-3a02-4f67-bf6d-7904d7438292',
+        fileGuid: 'c19cfb13-c71e-4c81-baa0-f63eff3a83e6',
     },
     {
         id: '2',
