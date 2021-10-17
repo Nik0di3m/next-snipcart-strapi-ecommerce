@@ -8,7 +8,7 @@ export interface ISnipcartProduct {
     url: string
     description: string
     image: string // Hack to pass the image URL instead of the StaticImage object we required
-    guid?: string
+    fileGuid?: string
 }
 
 interface IProduct {
@@ -18,7 +18,7 @@ interface IProduct {
     url: string
     description: string
     image: string
-    guid?: string
+    fileGuid?: string
 }
 
 export default function handler(
