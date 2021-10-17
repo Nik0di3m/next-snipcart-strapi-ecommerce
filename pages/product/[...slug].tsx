@@ -140,7 +140,15 @@ const ProductPage: NextPage = () => {
                         </p>
                     </article>
                     <div className="mt-6 flex flex-col justify-between space-y-5 lg:flex-row lg:space-y-0">
-                        <button className="hover:scale-105 bg-white py-4 text-black duration-200 lg:w-1/3">
+                        <button
+                            data-item-id="1"
+                            data-item-price="80.00"
+                            data-item-url="/"
+                            data-item-name="Zapalniczka"
+                            data-item-image="/images/test.png"
+                            data-item-file-guid="39c97d6d-3a02-4f67-bf6d-7904d7438292"
+                            className="snipcart-add-item hover:scale-105 bg-white py-4 text-black duration-200 lg:w-1/3"
+                        >
                             <span className="uppercase">Buy Now</span>
                         </button>
                         <button className="hover:scale-105 bg-white py-4 text-black duration-200 lg:w-1/3">
