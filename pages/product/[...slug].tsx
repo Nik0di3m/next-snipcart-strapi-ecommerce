@@ -30,9 +30,9 @@ const ProductPage: NextPage = () => {
 
     return (
         <main className="min-h-screen w-full px-2">
-            <section className="flex w-full">
-                <div className="w-[70%]">
-                    <div className="h-[600px] flex w-full items-center justify-center bg-primary">
+            <section className="flex w-full flex-col lg:flex-row">
+                <div className="lg:w-[70%]">
+                    <div className="h-[300px] lg:h-[600px] flex w-full items-center justify-center bg-primary">
                         <div className="relative h-4/5 w-4/5">
                             <Image
                                 src="/images/test.png"
@@ -44,7 +44,7 @@ const ProductPage: NextPage = () => {
                     </div>
                     <div className="flex w-full">
                         <div
-                            className={`bg-[#050505] hover:bg-[#1a1a1a] duration-150 cursor-pointer relative h-48 w-1/${ITEM_NUMBER}`}
+                            className={`bg-[#050505] hover:bg-[#1a1a1a] active:bg-[#1a1a1a] duration-150 cursor-pointer relative h-24 lg:h-48 w-1/${ITEM_NUMBER}`}
                         >
                             <Image
                                 src="/images/test.png"
@@ -54,7 +54,7 @@ const ProductPage: NextPage = () => {
                             />
                         </div>
                         <div
-                            className={`bg-[#050505] hover:bg-[#1a1a1a] duration-150 cursor-pointer relative h-48 w-1/${ITEM_NUMBER}`}
+                            className={`bg-[#050505] hover:bg-[#1a1a1a] active:bg-[#1a1a1a] duration-150 cursor-pointer relative h-24 lg:h-48 w-1/${ITEM_NUMBER}`}
                         >
                             <Image
                                 src="/images/test.png"
@@ -64,7 +64,7 @@ const ProductPage: NextPage = () => {
                             />
                         </div>
                         <div
-                            className={`bg-[#050505] hover:bg-[#1a1a1a] duration-150 cursor-pointer relative h-48 w-1/${ITEM_NUMBER}`}
+                            className={`bg-[#050505] hover:bg-[#1a1a1a] active:bg-[#1a1a1a] duration-150 cursor-pointer relative h-24 lg:h-48 w-1/${ITEM_NUMBER}`}
                         >
                             <Image
                                 src="/images/test.png"
@@ -74,7 +74,7 @@ const ProductPage: NextPage = () => {
                             />
                         </div>
                         <div
-                            className={`bg-[#050505] hover:bg-[#1a1a1a] duration-150 cursor-pointer relative h-48 w-1/${ITEM_NUMBER}`}
+                            className={`bg-[#050505] hover:bg-[#1a1a1a] active:bg-[#1a1a1a] duration-150 cursor-pointer relative h-24 lg:h-48 w-1/${ITEM_NUMBER}`}
                         >
                             <Image
                                 src="/images/test.png"
@@ -84,7 +84,7 @@ const ProductPage: NextPage = () => {
                             />
                         </div>
                         <div
-                            className={`bg-[#050505] hover:bg-[#1a1a1a] duration-150 cursor-pointer relative h-48 w-1/${ITEM_NUMBER}`}
+                            className={`bg-[#050505] hover:bg-[#1a1a1a] active:bg-[#1a1a1a] duration-150 cursor-pointer relative h-24 lg:h-48 w-1/${ITEM_NUMBER}`}
                         >
                             <Image
                                 src="/images/test.png"
@@ -94,7 +94,7 @@ const ProductPage: NextPage = () => {
                             />
                         </div>
                         <div
-                            className={`bg-[#050505] hover:bg-[#1a1a1a] duration-150 cursor-pointer relative h-48 w-1/${ITEM_NUMBER}`}
+                            className={`bg-[#050505] hover:bg-[#1a1a1a] active:bg-[#1a1a1a] duration-150 cursor-pointer relative h-24 lg:h-48 w-1/${ITEM_NUMBER}`}
                         >
                             <Image
                                 src="/images/test.png"
@@ -105,12 +105,13 @@ const ProductPage: NextPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-[30%] p-6">
+                <div className="lg:w-[30%] p-6">
                     <article>
-                        <h1 className="text-3xl font-normal">
+                        <h1 className="mb-2 text-3xl font-normal">
                             Krzemień Wieczny
                         </h1>
-                        <p className="mb-6 mt-12 font-light tracking-wide">
+                        <StareGrade />
+                        <p className="mb-6 mt-6 font-light tracking-wide">
                             Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. Ipsam, dolore voluptas
                             aperiam fuga, nesciunt recusandae
@@ -138,12 +139,11 @@ const ProductPage: NextPage = () => {
                             explicabo sunt voluptatem!
                         </p>
                     </article>
-                    <StareGrade />
-                    <div className="mt-6 flex justify-between">
-                        <button className="w-1/3 hover:scale-105 bg-white py-4 text-black duration-200">
+                    <div className="mt-6 flex flex-col justify-between space-y-5 lg:flex-row lg:space-y-0">
+                        <button className="hover:scale-105 bg-white py-4 text-black duration-200 lg:w-1/3">
                             <span className="uppercase">Buy Now</span>
                         </button>
-                        <button className="w-1/3 hover:scale-105 bg-white py-4 text-black duration-200">
+                        <button className="hover:scale-105 bg-white py-4 text-black duration-200 lg:w-1/3">
                             <span className="uppercase">
                                 Add to cart
                             </span>
