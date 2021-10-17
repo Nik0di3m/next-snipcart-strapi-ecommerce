@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                 />
                 <link
                     rel="stylesheet"
-                    href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css"
+                    href="https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.css"
                 />
             </Head>
             <Layout>
@@ -25,12 +25,13 @@ function MyApp({ Component, pageProps }: AppProps) {
             </Layout>
             <Script
                 async
-                src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"
+                src="https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.js"
             ></Script>
             <div
-                hidden
                 id="snipcart"
+                data-config-modal-style="side"
                 data-api-key="OTAxMzc4MTAtYTllYy00ZTdkLTkxMTItMWE2ZWZiZjRlNzM5NjM3Njk0NTgyNDE3NzM2ODg2"
+                hidden
             ></div>
         </>
     )
