@@ -104,6 +104,7 @@ export const products = [
         description:
             'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quas rerum a porro ratione repellendus iste, vero corrupti, quibusdam magni consequuntur nostrum quam consectetur cupiditate atque ducimus unde, numquam tempora.',
         url: '/api/products/1',
+        guid: '39c97d6d-3a02-4f67-bf6d-7904d7438292',
     },
     {
         id: '2',
