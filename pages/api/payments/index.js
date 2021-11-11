@@ -1,4 +1,4 @@
-export default function handler(
+export default async function handler(
     req,
     res,
 ) {
@@ -6,12 +6,12 @@ export default function handler(
     const request = req.body;
 
     // Validate that the request is coming from Snipcart
-    // const response = await fetch(`https://payment.snipcart.com/api/public/custom-payment-gateway/validate?publicToken=${request.publicToken}`)
+    const response = await fetch(`https://payment.snipcart.com/api/public/custom-payment-gateway/validate?publicToken=${request.publicToken}`)
 
     // Return a 404 if the request is not from Snipcart
-    // if (!response.ok) {
-    //     return res.status(404).send('')
-    // }
+    if (!response.ok) {
+        return res.status(404).send('')
+    }
     let paymentMethodList = [{
         id: 'sleeky_pay',
         name: 'SleekyPay',
@@ -19,5 +19,5 @@ export default function handler(
         checkoutUrl: `/#`,
     }]
     console.warn(paymentMethodList)
-    return res.status(200).send(paymentMethodList)
+    return res.status(200).send(JSON.stringify(paymentMethodList))
 }
