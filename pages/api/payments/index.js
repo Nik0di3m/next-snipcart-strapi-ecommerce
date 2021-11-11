@@ -12,11 +12,11 @@ export default async function handler(
     if (!response.ok) {
         return res.status(404).send('')
     }
-    let paymentMethodList = [{
+    let paymentMethodList = {
         id: 'sleeky_pay',
         name: 'SleekyPay',
         checkoutUrl: `/index.html`,
-    }]
+    }
     console.warn(request.publicToken)
     console.warn(paymentMethodList)
     return res.status(200).json(paymentMethodList)
