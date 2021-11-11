@@ -17,6 +17,6 @@ export default async function handler(
     //     name: 'SleekyPay',
     //     checkoutUrl: `/index.html`,
     // }]
-    console.warn(request)
+    console.warn(request.publicToken)
     res.status(200).send(request)
 }
