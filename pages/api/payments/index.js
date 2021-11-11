@@ -15,9 +15,10 @@ export default async function handler(
     let paymentMethodList = [{
         id: 'sleeky_pay',
         name: 'SleekyPay',
+        iconUrl: 'https://www.przelewy24.pl/themes/base/assets/img/logo-przelewy-24.svg',
         checkoutUrl: `/index.html`,
     }]
     console.warn(request.publicToken)
     console.warn(paymentMethodList)
-    return res.status(200).json(paymentMethodList)
+    return res.status(200).send(paymentMethodList)
 }
