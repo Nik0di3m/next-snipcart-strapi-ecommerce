@@ -1,4 +1,4 @@
-export default async function handler(
+export default function handler(
     req,
     res,
 ) {
@@ -6,7 +6,7 @@ export default async function handler(
     const request = req.body;
 
     // Validate that the request is coming from Snipcart
-    const response = await fetch(`https://payment.snipcart.com/api/public/custom-payment-gateway/validate?publicToken=${request.publicToken}`)
+    // const response = await fetch(`https://payment.snipcart.com/api/public/custom-payment-gateway/validate?publicToken=${request.publicToken}`)
 
     // Return a 404 if the request is not from Snipcart
     // if (!response.ok) {
@@ -16,9 +16,8 @@ export default async function handler(
         id: 'sleeky_pay',
         name: 'SleekyPay',
         iconUrl: 'https://www.przelewy24.pl/themes/base/assets/img/logo-przelewy-24.svg',
-        checkoutUrl: `/index.html`,
+        checkoutUrl: `/#`,
     }]
-    console.warn(request.publicToken)
     console.warn(paymentMethodList)
     return res.status(200).send(paymentMethodList)
 }
