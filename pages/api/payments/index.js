@@ -13,11 +13,10 @@ export default async function handler(
     //     return res.status(404).send('')
     // }
     let paymentMethodList = [{
-        id: 'sleeky_pay',
-        name: 'SleekyPay',
-        iconUrl: 'https://www.przelewy24.pl/themes/base/assets/img/logo-przelewy-24.svg',
-        checkoutUrl: `/#`,
+            "id": "snipcart_custom_gatway_1",
+            "name": "Custom gateway 1",
+            "checkoutUrl": "https://snipcart.com/checkout_gateway_1",
     }]
     console.warn(JSON.stringify(paymentMethodList))
-    return res.status(200).json(JSON.stringify(paymentMethodList))
+     res.status(200).json(JSON.stringify(paymentMethodList))
 }
