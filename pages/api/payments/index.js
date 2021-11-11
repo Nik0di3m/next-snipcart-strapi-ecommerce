@@ -1,26 +1,24 @@
-export default async function handler(event, context, callback) {   
-    // Get request's body
-    const request = JSON.parse(event.body)
+export default async function handler(
+    req,
+    res
+) {
+
+    const request = JSON.parse(req.body)
 
     // Validate that the request is coming from Snipcart
     const response = await fetch(`https://payment.snipcart.com/api/public/custom-payment-gateway/validate?publicToken=${request.PublicToken}`)
 
     // Return a 404 if the request is not from Snipcart
-    if (!response.ok) return {
-        statusCode: 404,
-        body: "nie ma"
+    if (!response.ok) {
+        res.status(404).json({})
+        return
     }
 
-    // Create a payment method list
     let paymentMethodList = [{
-        id: '1',
-        name: 'Przelewy 24',
-        checkoutUrl: '/',
+        id: '<payment_method_unique_id>',
+        name: '<payment_method_name>',
+        iconUrl: '<payment_method_icon_url_optional>',
+        checkoutUrl: '<payment_method_checkout_url>',
     }]
-
-    // Return successful status code and available payment methods
-    return {
-        statusCode: 200,
-        body: JSON.stringify(paymentMethodList)
-    };
+    res.status(200).json(paymentMethodList)
 }
