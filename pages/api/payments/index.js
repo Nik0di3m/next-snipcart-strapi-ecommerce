@@ -19,5 +19,5 @@ export default async function handler(
         checkoutUrl: `/#`,
     }]
     console.warn(JSON.stringify(paymentMethodList))
-    return res.status(200).send(JSON.stringify(paymentMethodList))
+    return res.status(200).json(JSON.stringify(paymentMethodList))
 }
