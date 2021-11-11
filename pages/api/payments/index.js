@@ -10,7 +10,7 @@ export default async function handler(
 
     // Return a 404 if the request is not from Snipcart
     if (!response.ok) {
-        res.status(404).send('')
+        return res.status(404).send('')
     }
     let paymentMethodList = [{
         id: 'sleeky_pay',
