@@ -13,9 +13,10 @@ export default async function handler(
     //     return res.status(404).send('')
     // }
     let paymentMethodList = [{
-            "id": "snipcart_custom_gatway_1",
-            "name": "Custom gateway 1",
+            "id": "p24",
+            "name": "Przelewy24",
             "checkoutUrl": "https://snipcart.com/checkout_gateway_1",
+            "iconUrl": "https://www.przelewy24.pl/themes/base/assets/img/logo-przelewy-24.svg"
     }]
     console.warn(JSON.stringify(paymentMethodList))
      res.status(200).json(JSON.stringify(paymentMethodList))
