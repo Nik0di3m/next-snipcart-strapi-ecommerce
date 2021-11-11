@@ -3,7 +3,7 @@ export default async function handler(
     res,
 ) {
 
-    const request = JSON.parse(req.body);
+    const request = req.body;
 
     // // Validate that the request is coming from Snipcart
     // const response = await fetch(`https://payment.snipcart.com/api/public/custom-payment-gateway/validate?publicToken=${request.PublicToken}`)
