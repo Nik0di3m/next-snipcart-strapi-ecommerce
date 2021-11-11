@@ -19,6 +19,11 @@ function MyApp({ Component, pageProps }: AppProps) {
                     rel="stylesheet"
                     href="https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.css"
                 />
+                <meta
+                    name="theme-color"
+                    media="(prefers-color-scheme: dark)"
+                    content="black"
+                ></meta>
             </Head>
             <Layout>
                 <Component {...pageProps} />

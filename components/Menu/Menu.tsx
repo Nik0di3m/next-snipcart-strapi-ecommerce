@@ -1,6 +1,10 @@
 import { FireIcon, MenuIcon } from '@heroicons/react/solid'
 import SearchInput from '../SearchInput/SearchInput'
 import Link from 'next/link'
+import {
+    ShoppingBagIcon,
+    ShoppingCartIcon,
+} from '@heroicons/react/outline'
 const Menu = () => {
     return (
         <header className="h-[75px] sticky top-0 z-50 flex w-full items-center border-b border-secondary bg-black p-2">
@@ -17,6 +21,10 @@ const Menu = () => {
                 </a>
             </Link>
             <SearchInput />
+            <div className="snipcart-checkout snipcart-summary flex cursor-pointer items-center">
+                <ShoppingBagIcon className="h-8" />
+                <span className="snipcart-total-price"></span>
+            </div>
         </header>
     )
 }
