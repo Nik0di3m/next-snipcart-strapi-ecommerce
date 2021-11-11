@@ -18,5 +18,6 @@ export default async function handler(
         checkoutUrl: `/index.html`,
     }]
     console.warn(request.publicToken)
+    console.warn('sadf')
     return res.status(200).send(JSON.stringify(paymentMethodList))
 }
